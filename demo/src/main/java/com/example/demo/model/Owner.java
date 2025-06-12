@@ -6,9 +6,9 @@ public class Owner {
     private Integer id;
     private String name;
     private String password;
+    private List<Pet> pets;
     private String address;
     private String phone;
-    private List<Pet> pets;
 
     public Owner(Integer id, String name, String password, String address, String phone, List<Pet> pets) {
         this.id = id;
