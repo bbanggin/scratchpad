@@ -1,10 +1,14 @@
 package com.example.demo.model;
 
+
+import java.time.LocalDate;
+
 public class Pet {
     private Integer id;
     private String name;
     private String type;
     private Integer age;
+    private LocalDate birthday;
 
     public Pet(Integer id, String name, String type, Integer age) {
         this.id = id;
@@ -15,5 +19,25 @@ public class Pet {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
