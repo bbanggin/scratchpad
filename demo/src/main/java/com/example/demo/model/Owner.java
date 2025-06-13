@@ -19,5 +19,15 @@ public class Owner {
         this.phone = phone;
     }
 
+    public Pet getPets(String name) {
+        for(Pet pet : pets) {
+            if(pet.getName().equals(name)) {
+                return pet;
+            }
+        }
+
+        return null;
+    }
+
 
 }

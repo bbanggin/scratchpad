@@ -12,4 +12,8 @@ public class Pet {
         this.type = type;
         this.age = age;
     }
+
+    public String getName() {
+        return name;
+    }
 }
