@@ -19,6 +19,10 @@ public class Owner {
         this.phone = phone;
     }
 
+    public void addPet(Pet pet) {
+        pets.add(pet);
+    }
+
     public Pet getPets(String name) {
         for(Pet pet : pets) {
             if(pet.getName().equals(name)) {
